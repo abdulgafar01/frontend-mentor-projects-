@@ -1,0 +1,87 @@
+body{
+  background: url("../images/pattern-background-desktop.svg")
+   no-repeat center center/cover;
+ background-color:rgb(223, 237, 245);
+
+}
+   #card 
+   {
+    background-color: white;
+    width: 350px;
+    border-radius: 15px;
+    margin:45px auto;
+   }
+   p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    text-align:center ;
+  }
+  #img1 {
+    display: block;
+    border-radius: 15px 15px 0 0;
+    width: 350px
+
+  }
+  #down{
+    padding: 30px;
+  }
+  #down #down-content{
+    text-align: center;
+  }
+ 
+  #btn
+    {background-color:rgb(242, 247, 248);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .item1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5px;
+  }
+  .item2{
+    padding-right: 10px;
+  }
+  p a, a:hover{
+    text-decoration: none;
+    }
+
+  #btn-2 {
+    background-color: blue;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 9px;
+    box-shadow:rgb(169, 169, 218) 0px 10px 15px;
+
+  } 
+  #btn-2 a{
+    text-decoration: none;
+    color: antiquewhite;
+  }
+ 
+  #img2 {
+       height: 40px;
+        padding: 15px;
+       
+    }
+
+   
+@media(max-width:375px){
+  body{
+    background: url(../images/pattern-background-mobile.svg) no-repeat center center/cover;
+    background-color:rgb(223, 237, 245);
+
+  }
+  #card{
+    top: 3;
+    left:30px;
+  }
+  #img1 , #card{
+    width: 300px;
+  }
+}
