@@ -1,0 +1,114 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ @import url('https://fonts.google.com/specimen/Inter');
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    position: relative;
+    font-family: Inter, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+/* utilities */
+
+.primary-colour{
+    color: hsl(277, 64%, 61%);
+}
+.l-h{
+    font-size: 26px;
+    color: hsl(0, 0%, 100%);
+    margin: 15px;
+
+}
+.small{
+    font-size: 9px;
+    margin: 10px 40px 40px 10px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 15px;
+   
+}
+.small-content{
+    font-size: 9px;
+    color: hsla(0, 3%, 74%, 0.6);
+}
+/* main style */
+#container{
+    /* position: absolute; */
+    display: flex;
+    background-color:hsl(244, 38%, 16%);
+    width: 700px;
+    height: 250px;
+    border-radius: 5px;
+}
+.container-content{
+    color: white;
+    padding: 20px;
+    width: 350px;
+    padding: 30px;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+.container-pics{
+    background:hsl(277, 87%, 54%);
+    height: 250px;
+    width: 350px;
+    border-radius:0 5px 5px 0 ;
+}
+    
+#pics{
+    height: 250px;
+    border-radius:0 5px 5px 0;
+    width: 350px; 
+    opacity: 0.5;
+}
+.attribution,.attribution a:link
+.attribution a:active{
+    color: white;
+    background-color: brown;
+    width: 150px;
+    position: absolute;
+    z-index: -1;
+    top: 200px;  
+}
+
+
+@media(max-width:500px){
+    #container{
+        flex-direction: column-reverse;
+        height: 700px;
+        width: 300px;
+        top: 15px;
+        left: 35px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    #pics, .container-pics{
+        border-radius: 5px 5px 0 0;
+        width: 300px;
+        height: 300px;
+    }
+    .container-content{
+        height: 400px;
+        width: 300px;
+    }
+    .content{
+
+       align-items: center;
+    }
+    .small-content{
+        margin-bottom: 30px;
+    }
+
+   }
