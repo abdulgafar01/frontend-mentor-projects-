@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;   
+}
+
+html{
+    font-size: 62.5%
+}
+.container{
+    font-size: 1.5rem;
+}
+a:link {
+    text-decoration: none;   
+}
+/* header */
+/* navigation */
+nav{
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.logo{
+   width: 10rem;
+}
+.nav-list li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 1rem;
+}
+ /* header content */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.parag{
+    color:hsl(243, 87%, 12%);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2.3rem;
+
+}
+
+.header-content{
+    width: 40%;
+    margin: 2rem;
+}
+.heading{
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: hsl(243, 87%, 12%);
+    margin-bottom: 1rem;
+}
+.header-image img{
+    display: inline-block;
+    width: 50rem;
+}
+
+/*header form */
+input{
+    outline: none;
+    border: none;
+    margin: 3rem 0;
+    height: 4.5rem;
+}
+.input{
+    position: relative;
+}
+.error_one{
+    position: absolute;
+    display: hidden;
+    top: 80px;
+    left: 0px;
+    color: red;
+    font-size: 1.5rem;
+}
+.red_border{
+    border: 1px solid red;
+}
+.default_border{
+    border: 1px solid hsl(243, 87%, 12%);
+}
+
+#text{
+    width: 25rem;
+    padding: 0.9rem;
+    color: hsl(224, 93%, 58%);
+    border-radius: 3px; 
+    margin-bottom: 1px;
+    margin-right: 2rem; 
+}
+#btn{
+    width: 18rem;
+    background-color:hsl(224, 93%, 58%);
+    padding: 0.9rem ;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+ /* About */
+.about{
+    background:url(./images/bg-curve-desktop.svg)
+     no-repeat center center/cover;
+     padding: 5rem 0;
+     margin-top: 6rem;
+    }
+
+.image-main img{
+    width: 39rem;
+}
+.text-main{
+    width: 40%;
+}
+.testimonial{
+    background-color: #fff;
+    width: 30rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    filter: drop-shadow(0 0 0.5rem rgb(219, 218, 219));
+}
+.testimonial__avatar{
+    margin-top: 1rem;
+}
+.testimonial__avatar img{
+    width: 3.5rem;
+    border-radius: 444px;
+    float: left;
+    margin-right: 1rem;
+}
+.heading-sub{
+ color:hsl(243, 87%, 12%);
+ font-weight: 700;
+ display: block;
+}
+.parag-sub{
+    color:hsl(243, 87%, 12%);
+    font-size: 1.3rem;
+}
+.btn2{
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+  color:hsl(170, 45%, 43%);
+  padding-bottom: 3px;
+  display: inline-block;
+}
+
+/* section */
+.sign-up{
+    background-color:hsl(238, 22%, 44%);
+    padding: 5rem;
+    color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.error_two{
+    position: absolute;
+     bottom:96px;
+     color: #f3f3f3;
+     font-size: 1.5rem;
+}
+.sign-up__text{
+    width: 30rem;
+}
+.sign-up--head{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+    display: block;
+}
+#text1{
+    display: block;
+    padding: 10px;
+    width: 30rem;
+    outline: none;
+    border-radius: 5px;
+}
+
+/* footer */
+footer{
+    background:hsl(243, 87%, 12%);
+    padding: 5rem;
+    color: #f3f3f3;
+}
+
+/* this is to change the logo to white */
+.mg{
+    margin-bottom: 2px;
+    margin-left: 10px;
+    width: 15rem;
+    filter: brightness(0) invert(1);
+}
+footer li {
+    list-style: none;
+    margin: 2rem;
+}
+footer .small-image{
+    width: 1.5rem;
+    margin-right:1rem;
+}
+.active:hover{
+    color:hsl(238, 22%, 44%) ;
+    cursor: pointer;
+}
+footer div{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+@media screen and (max-width:500px) {
+    .flex{
+        flex-direction: column-reverse;
+    }
+    .about{
+        background:url(./images/bg-curve-mobile.svg)
+         no-repeat center center/cover;
+        }
+        .header-image img{
+            width: 30rem;
+        }
+        .header-content{
+            width: 34rem;
+        }
+        #text,#btn{
+            width: 100%;
+        }
+        .text-main{
+            width: 38rem;
+        }
+        .btn2{
+           margin: 3rem 10rem;
+        }
+        .testimonial{
+            margin: auto;
+        }
+        .about{
+            background:url(./images/bg-curve-mobile.svg)
+     no-repeat center center/cover;
+        }
+        .sign-up,
+        footer div{
+            flex-direction: column;
+        }
+        
+}
